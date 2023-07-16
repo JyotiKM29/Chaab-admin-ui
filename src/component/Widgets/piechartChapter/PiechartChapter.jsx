@@ -1,3 +1,4 @@
+import DonutChart from './DonutChart'
 import './piechartChapter.scss'
 
 const PiechartChapter = () => {
@@ -5,7 +6,9 @@ const PiechartChapter = () => {
     <div className='piechartChapter'>
     <h3 className='about'>Chapter Wise Status</h3>
     <div className='chart'>
-      {/* chart */}
+      <DonutChart />
+      
+
     </div>
     <div className='type'>
       <ul>

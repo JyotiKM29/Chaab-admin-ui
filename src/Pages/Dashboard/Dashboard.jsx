@@ -8,7 +8,7 @@ import PiechartChapter from "../../component/Widgets/piechartChapter/PiechartCha
 import BarDailyWorkers from "../../component/Widgets/barDailyWorkers/BarDailyWorkers";
 import MonthlyEnrollees from "../../component/Widgets/monthlyEnrollees/MonthlyEnrollees";
 import PieQuizPassing from "../../component/Widgets/quizzPassing/PieQuizPassing";
-import BarDailyTraining from "../../component/Widgets/DailyTC/BarDailyTraining";
+import BarDailyTraining from "../../component/Widgets/barDailyTC/BarDailyTraining";
 
 const Dashboard = () => {
   return (

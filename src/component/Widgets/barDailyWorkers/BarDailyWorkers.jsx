@@ -1,4 +1,6 @@
+import BarChartDW from './BarChartDW'
 import './barDailyWorkers.scss'
+
 
 const BarDailyWorkers = () => {
   return (
@@ -9,9 +11,9 @@ const BarDailyWorkers = () => {
       </div>
 
        {/*chart  */}
-       {/* <div className='barchart'>
-       
-      </div> */}
+       <div className='barchart'>
+         <BarChartDW />
+      </div>
      
     </div>
   )

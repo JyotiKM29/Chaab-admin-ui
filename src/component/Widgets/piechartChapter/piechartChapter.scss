@@ -1,68 +1,139 @@
 @import "../../../style/mixins";
 
+// .piechartChapter {
+//     flex: 1;
+//     height: 38vh;
+//     margin: 0 1.2%;
+//     margin-right: 0;
+//     @include boxStyle;
+  
+//     .about {
+//       @include aboutHeading;
+//       height: 10%;
+//     }
+  
+//     .chart {
+//       height: 65%;
+//       width: 100%;
+//     }
+  
+//     .type {
+//       height: 30%;
+//       font-size: 0.8rem;
+//       color: #333333;
+//       white-space: nowrap;
+  
+//       ul {
+//         list-style: none;
+//         columns: 2;
+//         -webkit-columns: 2; 
+//         -moz-columns: 2; 
+  
+//         li {
+//           break-inside: avoid-column; 
+//           margin-bottom: 0.5rem;
+//           display: flex;
+  
+//           .colorPieArea {
+//             height: 1rem;
+//             width: 1rem;
+//             border-radius: 50%;
+//             margin-right: 0.7rem;
+//           }
+  
+//           span {
+//             white-space: nowrap;
+//           }
+//         }
+//       }
+//     }
+  
+//     // Apply colors to .colorPieArea based on li class
+//     .type ul li:nth-child(1) .colorPieArea {
+//       background-color: #0D62FF;
+//     }
+//     .type ul li:nth-child(2) .colorPieArea {
+//       background-color: #8400D5;
+//     }
+//     .type ul li:nth-child(3) .colorPieArea {
+//       background-color: red;
+//     }
+//     .type ul li:nth-child(4) .colorPieArea {
+//       background-color: #333333;
+//     }
+//     .type ul li:nth-child(5) .colorPieArea {
+//       background-color: #425F57;
+//     }
+//   }
+  
+  
+
 .piechartChapter {
-    flex: 1;
-    height: 38vh;
-    margin: 0 1.2%;
-    margin-right: 0;
-    @include boxStyle;
-  
-    .about {
-      @include aboutHeading;
-      height: 10%;
-    }
-  
-    .chart {
-      height: 65%;
-    }
-  
-    .type {
-      height: 30%;
-      font-size: 0.8rem;
-      color: #333333;
-      white-space: nowrap;
-  
-      ul {
-        list-style: none;
-        columns: 2;
-        -webkit-columns: 2; 
-        -moz-columns: 2; 
-  
-        li {
-          break-inside: avoid-column; 
-          margin-bottom: 0.5rem;
-          display: flex;
-  
-          .colorPieArea {
-            height: 1rem;
-            width: 1rem;
-            border-radius: 50%;
-            margin-right: 0.7rem;
-          }
-  
-          span {
-            white-space: nowrap;
-          }
+  flex: 1;
+  height: 38vh;
+  margin: 0 1.2%;
+  margin-right: 0;
+  @include boxStyle;
+
+  .about {
+    @include aboutHeading;
+    height: 10%;
+  }
+
+  .chart {
+    height: 65%;
+    width: 100%;
+    display: flex; /* Add display: flex to the chart container */
+    align-items: flex-start; /* Align the chart to the top */
+    overflow: hidden;
+  }
+
+  .type {
+    height: 30%;
+    font-size: 0.8rem;
+    color: #333333;
+    white-space: nowrap;
+    overflow: auto;
+
+    ul {
+      list-style: none;
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+
+      li {
+        break-inside: avoid-column;
+        margin-bottom: 0.5rem;
+        display: flex;
+
+        .colorPieArea {
+          height: 1rem;
+          width: 1rem;
+          border-radius: 50%;
+          margin-right: 0.7rem;
+        }
+
+        span {
+          white-space: nowrap;
         }
       }
     }
-  
-    // Apply colors to .colorPieArea based on li class
-    .type ul li:nth-child(1) .colorPieArea {
-      background-color: #0D62FF;
-    }
-    .type ul li:nth-child(2) .colorPieArea {
-      background-color: #8400D5;
-    }
-    .type ul li:nth-child(3) .colorPieArea {
-      background-color: red;
-    }
-    .type ul li:nth-child(4) .colorPieArea {
-      background-color: #333333;
-    }
-    .type ul li:nth-child(5) .colorPieArea {
-      background-color: #425F57;
-    }
   }
-  
-  
+
+  // Apply colors to .colorPieArea based on li class
+  .type ul li:nth-child(1) .colorPieArea {
+    background-color: #0D62FF;
+  }
+  .type ul li:nth-child(2) .colorPieArea {
+    background-color: #8400D5;
+  }
+  .type ul li:nth-child(3) .colorPieArea {
+    background-color: red;
+  }
+  .type ul li:nth-child(4) .colorPieArea {
+    background-color: #333333;
+  }
+  .type ul li:nth-child(5) .colorPieArea {
+    background-color: #425F57;
+  }
+}

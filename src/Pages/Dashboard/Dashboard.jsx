@@ -17,10 +17,11 @@ const Dashboard = () => {
         <Header />
         <div className="widgets">
           <div className="row1">
-            <AreaChart />
-            <AreaChart />
-            <AreaChart />
-            <AreaChart />
+            <AreaChart type="training"
+            />
+            <AreaChart type="video" />
+            <AreaChart type="quiz"/>
+            <AreaChart type="days" />
           </div>
 
           <div className="row2">

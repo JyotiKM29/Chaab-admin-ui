@@ -1,11 +1,81 @@
-@import '../../../style/mixins';
+@import "../../../style/mixins";
 
-.areachart{
-    height: 18vh;
-    width: 25%;
-    margin: 1.2%;
-    margin-right: 0;
-    background-color: white;
-    border-radius: 1rem;
-    @include boxShadow;
+.areachart {
+  // display: flex;
+  // flex:1;
+  height: 18vh;
+  width: 25%;
+  margin: 1.2%;
+  margin-right: 0;
+  background-color: white;
+  border-radius: 1rem;
+  @include boxShadow;
+
+  padding: 1% 1.5%;
+  .about {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  .contain {
+    display: flex;
+    height: 75%; // Set the height of the parent container
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 40%;
+
+      .totalCount {
+        // height: 100%;
+        font-size: 2.2rem;
+        font-weight: bold;
+      
+      }
+
+      .growth {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+        height: 2rem;
+        
+
+        .percentage {
+          width: 60%;
+          height: 100%;
+          font-size: .8rem;
+          
+          border-radius: 0.4rem;
+          
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &.positive{
+            background-color: #e6f4ec;
+            color: green;
+          }
+          &.negative{
+            background-color: #FBE6E8;
+            color: red;
+          }
+        }
+
+        .numbercount {
+          width: 30%;
+          height: 100%;
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .right {
+      height: 80%;
+      width:50%;
+    }
+  }
 }

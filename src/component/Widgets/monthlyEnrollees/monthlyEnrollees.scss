@@ -1,0 +1,31 @@
+@import '../../../style/mixins';
+
+.monthlyactivity{
+    // flex:1;
+    height: 23vh;
+    width: 25%;
+    margin: 1.2%;
+    margin-right: 0;
+   
+    @include boxStyle;
+
+    .about{
+        @include aboutHeading;
+    }
+    .subAbout{
+        display: flex;
+        margin-bottom: .5rem;
+        .arrow{
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: green;
+            margin: 0 .5rem;
+        }
+
+        h4{
+            font-size: .8rem;
+            font-weight: 400;
+            color: rgba( #333333, .5)
+        }
+    }
+}

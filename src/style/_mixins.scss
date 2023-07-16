@@ -1,5 +1,16 @@
-@mixin boxShadow{
+@mixin boxStyle{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1% 1.5%;
+
     box-shadow: 0px 4px 3px 0px rgba(24,120,242,0.25);
     -webkit-box-shadow: 0px 4px 3px 0px rgba(24,120,242,0.25);
     -moz-box-shadow: 0px 4px 3px 0px rgba(24,120,242,0.25);
+}
+
+
+@mixin aboutHeading{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color:#333333;
 }

@@ -1,0 +1,19 @@
+@import "../../../style/mixins";
+
+.dailytraining {
+  // flex:1;
+  height: 23vh;
+  width: 50%;
+  margin: 1.2%;
+  margin-right: 0;
+
+  @include boxStyle;
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      @include aboutHeading;
+    }
+  }
+}

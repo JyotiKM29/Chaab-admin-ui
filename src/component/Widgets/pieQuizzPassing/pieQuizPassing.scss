@@ -6,9 +6,11 @@
     width: 30%;
     margin: 1.2%;
     margin-right: 0;
-    background-color: white;
-    border-radius: 1rem;
     
-    @include boxShadow;
+    
+    @include boxStyle;
 
+    h3{
+        @include aboutHeading;
+    }
 }

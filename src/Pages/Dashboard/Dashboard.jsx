@@ -1,13 +1,16 @@
-import { BarChart } from "@mui/icons-material";
+import { BarChart, PieChart } from "@mui/icons-material";
 import Header from "../../component/Header/Header";
 import AreaChart from "../../component/Widgets/areaChart/AreaChart";
 import Sidebar from "../../component/sidebar/Sidebar";
 import "./dashboard.scss";
-import PieChart1 from "../../component/Widgets/piechart1/PieChart1";
-import Bar14Days from "../../component/Widgets/14days/Bar14Days";
-import MonthlyActivity from "../../component/Widgets/monthlyAct/MonthlyActivity";
-import QuizPassing from "../../component/Widgets/quizzPassing/QuizPassing";
-import DailyTC from "../../component/Widgets/DailyTC/DailyTC";
+
+
+import DailyTC from "../../component/Widgets/barDailyTraining/BarDailyTraining";
+import PiechartChapter from "../../component/Widgets/piechartChapter/PiechartChapter";
+import BarDailyWorkers from "../../component/Widgets/barDailyWorkers/BarDailyWorkers";
+import MonthlyEnrollees from "../../component/Widgets/monthlyEnrollees/MonthlyEnrollees";
+import PieQuizPassing from "../../component/Widgets/pieQuizzPassing/PieQuizPassing";
+import BarDailyTraining from "../../component/Widgets/barDailyTraining/BarDailyTraining";
 
 const Dashboard = () => {
   return (
@@ -25,14 +28,14 @@ const Dashboard = () => {
           </div>
 
           <div className="row2">
-            <PieChart1 />
-            <Bar14Days />
+            <PiechartChapter />
+            <BarDailyWorkers />
           </div>
 
           <div className="row3">
-             <MonthlyActivity />
-             <QuizPassing />
-             <DailyTC />
+             <MonthlyEnrollees />
+             <PieQuizPassing />
+            <BarDailyTraining />
           </div>
         </div>
       </div>

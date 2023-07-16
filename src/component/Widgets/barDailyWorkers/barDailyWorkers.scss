@@ -1,0 +1,25 @@
+@import '../../../style/mixins';
+
+.barchart{
+    flex:3;
+    height: 38vh;
+    
+    margin: 0 1.2%;
+    margin-right: 0;
+    
+    @include boxStyle;
+
+    .heading{
+        display: flex;
+        justify-content: space-between;
+        height: 10%;
+        h3{
+            @include aboutHeading;
+        
+        }
+    }
+    .barchart{
+       height: 88%;
+       background-color: antiquewhite;
+    }
+}

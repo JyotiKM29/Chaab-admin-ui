@@ -1,0 +1,19 @@
+.header{
+    background-image: url("./header background.svg");
+    min-height: 14%;
+    color: white;
+    padding: 2%  0% 1% 2%;
+    font-size: 2rem;
+
+    border-radius: 0  0 1rem 1rem;
+
+    .tittle{
+        font-size: 2rem;
+    }
+
+    .description{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+}

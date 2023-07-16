@@ -1,0 +1,14 @@
+@import '../../../style/mixins';
+
+.quizpassing{
+    // flex:1;
+    height: 23vh;
+    width: 30%;
+    margin: 1.2%;
+    margin-right: 0;
+    background-color: white;
+    border-radius: 1rem;
+    
+    @include boxShadow;
+
+}

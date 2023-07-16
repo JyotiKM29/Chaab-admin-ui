@@ -1,3 +1,4 @@
+import Chart from "./Chart";
 import "./areachart.scss";
 import ShowChartOutlinedIcon from "@mui/icons-material/ShowChartOutlined";
 
@@ -12,6 +13,7 @@ const AreaChart = ({ type }) => {
         percentage: 20,
         percentageType: "positive",
         numbercount: 234,
+        isPositive:true,
       };
       break;
 
@@ -22,6 +24,7 @@ const AreaChart = ({ type }) => {
         percentage: 20,
         percentageType: "negative",
         numbercount: 435,
+        isPositive:true,
       };
       break;
 
@@ -32,6 +35,7 @@ const AreaChart = ({ type }) => {
         percentage: 20,
         percentageType: "positive",
         numbercount: 24,
+        isPositive:false,
       };
       break;
 
@@ -42,6 +46,8 @@ const AreaChart = ({ type }) => {
         percentage: 20,
         percentageType: "positive",
         numbercount: 3,
+        isPositive:true,
+       
       };
       break;
 
@@ -62,7 +68,9 @@ const AreaChart = ({ type }) => {
             <div className="numbercount">{data.numbercount}</div>
           </div>
         </div>
-        <div className="right">{/* chart */}</div>
+        <div className="right">
+        <Chart isPositive={data.isPositive} />
+        </div>
       </div>
     </div>
   );

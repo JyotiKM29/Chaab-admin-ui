@@ -4,13 +4,11 @@ import AreaChart from "../../component/Widgets/areaChart/AreaChart";
 import Sidebar from "../../component/sidebar/Sidebar";
 import "./dashboard.scss";
 
-
-import DailyTC from "../../component/Widgets/barDailyTraining/BarDailyTraining";
 import PiechartChapter from "../../component/Widgets/piechartChapter/PiechartChapter";
 import BarDailyWorkers from "../../component/Widgets/barDailyWorkers/BarDailyWorkers";
 import MonthlyEnrollees from "../../component/Widgets/monthlyEnrollees/MonthlyEnrollees";
-import PieQuizPassing from "../../component/Widgets/pieQuizzPassing/PieQuizPassing";
-import BarDailyTraining from "../../component/Widgets/barDailyTraining/BarDailyTraining";
+import PieQuizPassing from "../../component/Widgets/quizzPassing/PieQuizPassing";
+import BarDailyTraining from "../../component/Widgets/DailyTC/BarDailyTraining";
 
 const Dashboard = () => {
   return (
@@ -20,10 +18,9 @@ const Dashboard = () => {
         <Header />
         <div className="widgets">
           <div className="row1">
-            <AreaChart type="training"
-            />
+            <AreaChart type="training" />
             <AreaChart type="video" />
-            <AreaChart type="quiz"/>
+            <AreaChart type="quiz" />
             <AreaChart type="days" />
           </div>
 
@@ -33,8 +30,8 @@ const Dashboard = () => {
           </div>
 
           <div className="row3">
-             <MonthlyEnrollees />
-             <PieQuizPassing />
+            <MonthlyEnrollees />
+            <PieQuizPassing />
             <BarDailyTraining />
           </div>
         </div>

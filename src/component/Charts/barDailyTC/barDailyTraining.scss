@@ -2,7 +2,7 @@
 
 .dailytraining {
   // flex:1;
-  min-height: 16%;
+  height: 26vh;
   width: 50%;
   margin: 1.2%;
   margin-right: 0;
@@ -19,7 +19,8 @@
   }
 
   .barchart{
-     height: 90%;
+     height: 100%;
      box-shadow: none;
+     background-color: transparent;
   }
 }

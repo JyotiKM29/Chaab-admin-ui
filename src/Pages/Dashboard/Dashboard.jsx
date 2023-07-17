@@ -1,14 +1,14 @@
 import { BarChart, PieChart } from "@mui/icons-material";
 import Header from "../../component/Header/Header";
-import AreaChart from "../../component/Widgets/areaChart/AreaChart";
+import AreaChart from "../../component/Charts/areaChart/AreaChart";
 import Sidebar from "../../component/sidebar/Sidebar";
 import "./dashboard.scss";
 
-import PiechartChapter from "../../component/Widgets/piechartChapter/PiechartChapter";
-import BarDailyWorkers from "../../component/Widgets/barDailyWorkers/BarDailyWorkers";
-import MonthlyEnrollees from "../../component/Widgets/monthlyEnrollees/MonthlyEnrollees";
-import PieQuizPassing from "../../component/Widgets/quizzPassing/PieQuizPassing";
-import BarDailyTraining from "../../component/Widgets/barDailyTC/BarDailyTraining";
+import PiechartChapter from "../../component/Charts/piechartChapter/PiechartChapter";
+import BarDailyWorkers from "../../component/Charts/barDailyWorkers/BarDailyWorkers";
+import MonthlyEnrollees from "../../component/Charts/monthlyEnrollees/MonthlyEnrollees";
+import PieQuizPassing from "../../component/Charts/quizzPassing/PieQuizPassing";
+import BarDailyTraining from "../../component/Charts/barDailyTC/BarDailyTraining";
 
 const Dashboard = () => {
   return (

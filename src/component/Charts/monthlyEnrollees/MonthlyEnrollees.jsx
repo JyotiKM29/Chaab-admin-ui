@@ -18,7 +18,7 @@ const MonthlyEnrollees = () => {
          <Course name="a"/>
          <Course name="b"/>
          <Course name="c"/>
-         <Course name="d"/>
+         
       </div>
 
     </div>

@@ -62,7 +62,7 @@ const AreaChart = ({ type }) => {
           <div className="totalCount">{data.totalCount.toLocaleString()}</div>
           <div className="growth">
             <div className={`percentage ${data.percentageType}`}>
-              <ShowChartOutlinedIcon />
+              <ShowChartOutlinedIcon  />
               {data.percentage}%
             </div>
             <div className="numbercount">{data.numbercount}</div>

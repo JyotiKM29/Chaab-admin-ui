@@ -20,7 +20,7 @@ const Chart = ({ isPositive }) => {
   const gradientId = isPositive ? "positiveGradient" : "negativeGradient";
 
   return (
-    <AreaChart width={120} height={120} data={normalizedData}>
+    <AreaChart width={100} height={100} data={normalizedData} style={{height:"100%", width:"100%"}}>
       <defs>
         <linearGradient id="positiveGradient" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="#008E43" />

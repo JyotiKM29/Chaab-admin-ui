@@ -1,30 +1,35 @@
-.dashboard{
+.dashboard {
     display: flex;
     width: 100%;
-
-    .container{
-        height: 100vh;
-        flex:4;
-        background-color: #e6eefe;
-
-        .widgets{
-            width:100%;
-            min-height: 86vh;
-          
-            padding-right:1rem;
-
-            .row1{
-                display: flex;
-                flex-direction: row;
-            }
-
-            .row2{
-                display: flex;
-            }
-
-            .row3{
-                display: flex;
-            }
+    min-height: 100vh;
+  
+    .container {
+      min-height: 100%;
+      flex: 4;
+      background-color: #e6eefe;
+  
+      .sidebar {
+        min-height: 14vh;
+      }
+  
+      .widgets {
+        width: 100%;
+        min-height: 87vh;
+        padding-right: 1rem;
+  
+        .row1 {
+          display: flex;
+          flex-direction: row;
         }
+  
+        .row2 {
+          display: flex;
+        }
+  
+        .row3 {
+          display: flex;
+        }
+      }
     }
-}
+  }
+  

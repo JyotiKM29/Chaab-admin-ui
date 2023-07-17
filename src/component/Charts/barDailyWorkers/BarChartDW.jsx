@@ -92,7 +92,7 @@ const data = [
 
 const BarChartDW = () => {
   return (
-    <ResponsiveContainer width="100%" height="100%">
+    <ResponsiveContainer width={"100%"} height={"100%"}>
       <BarChart
         width={500}
         height={300}
@@ -119,6 +119,7 @@ const BarChartDW = () => {
           fill="#4887FF"
           background={{ fill: '#E7EFFF', radius: 10 }}
           radius={[10, 10, 10, 10]}
+          barSize={15}
         />
       </BarChart>
     </ResponsiveContainer>

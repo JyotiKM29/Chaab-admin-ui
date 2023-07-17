@@ -10,10 +10,16 @@
   @include boxStyle;
 
   .about {
+    height: 10%;
     display: flex;
     justify-content: space-between;
     h3 {
       @include aboutHeading;
     }
+  }
+
+  .barchart{
+     height: 90%;
+     box-shadow: none;
   }
 }

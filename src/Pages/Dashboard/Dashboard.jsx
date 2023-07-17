@@ -13,7 +13,8 @@ import BarDailyTraining from "../../component/Widgets/barDailyTC/BarDailyTrainin
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <Sidebar />
+     
+      <Sidebar  className='sidebar'/>
       <div className="container">
         <Header />
         <div className="widgets">

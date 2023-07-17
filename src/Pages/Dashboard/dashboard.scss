@@ -2,13 +2,14 @@
     display: flex;
 
     .container{
+        height: 100vh;
         flex:4;
         background-color: #e6eefe;
 
         .widgets{
-            width: 100%;
-            min-height: 80%;
-            // background: red;
+            width:100%;
+            min-height: 86vh;
+          
             padding-right:1rem;
 
             .row1{

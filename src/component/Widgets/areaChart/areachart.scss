@@ -1,16 +1,15 @@
 @import "../../../style/mixins";
 
 .areachart {
-  // display: flex;
-  // flex:1;
-  min-height: 14%;
+  
+  height: 14vh;
   width: 25%;
-  margin: 1.2%;
+  margin: 1%;
   margin-right: 0;
   
   @include boxStyle;
 
-  padding: 1% 1.5%;
+  
   .about {
     @include aboutHeading;
   }

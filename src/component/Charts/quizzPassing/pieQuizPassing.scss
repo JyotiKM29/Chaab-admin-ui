@@ -2,7 +2,7 @@
 
 .quizpassing{
     // flex:1;
-    height: 26vh;
+    @include heightRow3;
     width: 30%;
     margin: 1.2%;
     margin-right: 0;

@@ -2,7 +2,7 @@
 
 .areachart {
   
-  height: 15vh;
+  @include heightRow1;
   width: 25%;
   margin: 1%;
   margin-right: 0;

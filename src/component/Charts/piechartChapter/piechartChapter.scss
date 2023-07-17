@@ -3,7 +3,7 @@
 
 .piechartChapter {
   flex: 1;
-  height: 40vh;
+  @include heightRow2;
   margin: 0 1.2%;
   margin-right: 0;
   @include boxStyle;

@@ -6,6 +6,7 @@ const PieQuizPassing = () => {
     <div className='quizpassing'>
       <h3>Quiz Passing %</h3>
       <DonutChartQuiz />
+     
     </div>
   )
 }

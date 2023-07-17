@@ -1,6 +1,7 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const DonutChartQuiz = () => {
@@ -14,7 +15,7 @@ const DonutChartQuiz = () => {
       },
     ],
   };
-
+ 
   const options = {
     // plugins: {
     //   legend: {
@@ -36,6 +37,7 @@ const DonutChartQuiz = () => {
   return (
     <div style={{ height: '90%', width: '100%' ,padding:'0' , margin:'0' }}>
       <Doughnut  data={data} options={options} />
+      
     </div>
   );
 };

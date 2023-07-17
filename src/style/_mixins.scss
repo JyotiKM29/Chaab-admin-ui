@@ -14,3 +14,20 @@
     font-weight: 300;
     color:#333333;
 }
+
+@mixin heightRow1{
+    height: 15vh;
+    // height: 25%;
+}
+
+
+@mixin heightRow2{
+    height: 40vh;
+    // height: 45%;
+}
+
+
+@mixin heightRow3{
+    height: 26vh;
+    // height: 30%;
+}
